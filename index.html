@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexis Ramírez - Desarrollador Full Stack Jr</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Partículas -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Navegación -->
+    <nav>
+        <div class="nav-content">
+            <div class="logo"></div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero">Inicio</a></li>
+                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#experience">Experiencia</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#education">Educación</a></li>
+            </ul>
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container">
+            <div class="hero-wrapper">
+                <div class="hero-image">
+                    <div class="profile-circle">
+                        <img src="images/ale2.png" alt="Alexis Ramírez">
+
+                    </div>
+                </div>
+
+                <div class="hero-content">
+                    <h1>Alexis Ramírez<br>Varillas</h1>
+                    <p class="subtitle">Desarrollador Full Stack Jr | 2 años creando soluciones digitales</p>
+
+                    <div class="hero-buttons">
+
+                        <a href="#" class="btn btn-secondary" onclick="downloadCV()">
+                            <i class="fas fa-download"></i> Descargar CV
+                        </a>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://github.com/alexrv98" class="social-btn" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+
+                        <a href="https://wa.me/522481089918?text=%C2%A1Hola%2C%20Alex%20nos%20interes%C3%B3%20tu%20perfil!"
+                            class="social-btn" title="WhatsApp" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/alex-rmz-varillas" class="social-btn" title="LinkedIn"
+                            target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="scroll-arrow" onclick="scrollToNext()">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <span class="scroll-text">Ver más</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="about-content fade-in">
+                <div class="about-text" style="max-width: 700px; margin: 0 auto; text-align: center;">
+                    <h2>Sobre mí</h2>
+                    <br>
+                    <p>
+                        Soy un <strong>desarrollador Full Stack Junior</strong> con 2 años de experiencia especializado
+                        en crear soluciones digitales que realmente impactan. Mi pasión radica en transformar ideas
+                        complejas en aplicaciones web y móviles intuitivas.
+                    </p>
+                    <p>
+                        Mi filosofía de desarrollo se basa en tres pilares fundamentales: <strong>código limpio y
+                            escalable</strong>, <strong>experiencia de usuario excepcional</strong> y
+                        <strong>colaboración efectiva</strong> con el equipo.
+                    </p>
+                    <p>
+                        Cada línea de código que escribo está pensada para ser mantenible, eficiente y orientada a
+                        resolver problemas reales del mundo digital.
+                    </p>
+
+                    <div class="highlight-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">2</span>
+                            <div class="stat-label">Años de<br>experiencia</div>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">15+</span>
+                            <div class="stat-label">Proyectos<br>completados</div>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">100%</span>
+                            <div class="stat-label">Código<br>limpio</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br><br><br>
+            <h2 class="fade-in" style="max-width: 700px; margin: 0 auto; text-align: center;">Habilidades</h2>
+
+            <div class="tech-categories fade-in" style="max-width: 900px; margin: 2rem auto 0 auto;">
+
+                <!-- Backend -->
+                <div class="tech-category">
+                    <h3></i> Backend</h3>
+                    <div class="icon-grid">
+                        <div class="icon-item">
+                            <img src="https://skillicons.dev/icons?i=laravel" alt="Laravel" title="Laravel" />
+                            <span>Laravel</span>
+                        </div>
+                        <div class="icon-item">
+                            <img src="https://skillicons.dev/icons?i=php" alt="PHP" title="PHP" />
+                            <span>PHP</span>
+                        </div>
+                        <div class="icon-item">
+                            <img src="https://skillicons.dev/icons?i=python" alt="Python" title="Python" />
+                            <span>Python</span>
+                        </div>
+                        <div class="icon-item">
+                            <img src="https://skillicons.dev/icons?i=java" alt="Java" title="Java" />
+                            <span>Java</span>
+                        </div>
+                        <div class="icon-item">
+                            <!-- Yii SVG directo -->
+                            <svg width="40" height="40" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg"
+                                aria-label="Yii2" role="img" style="margin-bottom:0.4rem;">
+                                <path fill="#6CBA00"
+                                    d="M142.1,28.1c-5.4,9.1-9.9,18.4-14.2,27.7c-16.6,36.7-24.6,75.2-26.7,115c-1.6,29.8-0.8,59.5,4.4,89c1.1,6.4,1.9,12.9,3.3,19.2c0.5,2.1,1.9,3.5,3.7,4.7c6.3,4.3,13.5,6.2,20.8,7.2c9.4,1.2,18.8,0.8,28-1.3c15.8-3.5,28.4-11.3,37.5-24.6c8.7-12.6,14.2-26.5,16.5-41.4c2.6-17.1,1.7-34-1.3-51c-6.1-34.5-18.3-66.7-38.3-96C166.5,58.2,154.8,43.6,142.1,28.1z" />
+                                <path fill="#3498DB"
+                                    d="M69.7,100.6c-9.2,4.4-17.6,9.6-25.6,15.6c-13.1,9.6-24.1,21-32.9,34.6c-6.5,10-10.5,20.8-11.1,32.7c-0.7,13.4,2.4,25.9,9.3,37.4c7.7,12.7,18.5,22.2,31.5,29.1c13.5,7.1,27.8,11.4,42.8,13.8c10.5,1.6,21.2,2.3,31.8,3.5c2.8,0.3,3.6-0.5,3.1-3.4c-2.2-12.2-3.5-24.6-4.5-36.9c-1.2-15.8-1.3-31.6-0.6-47.5c1.5-34.6,6.4-68.6,17.3-101.5c2.8-8.6,6-17.1,9.3-25.7C123.1,89.4,96.5,92.8,69.7,100.6z" />
+                                <path fill="#F39C12"
+                                    d="M240.3,102.7c-5.3,5.5-10.2,10.9-14.9,16.3c-19.2,21.6-36.7,44.7-51.6,70c-13.1,22.3-24.1,45.5-32.3,70c-4.1,12.2-7.3,24.7-10.4,37.3c-0.7,2.8,0.2,3.8,3.1,3.5c15.6-1.5,31.4-2.4,46.6-7.4c14.7-4.9,28.2-11.9,39.5-22.2c15.6-14.3,26.7-31.4,33.2-51.4c3.3-10.1,5.2-20.7,5.5-31.4c0.3-10.8-1.3-21.4-5.6-31.4c-3.6-8.5-8.5-16.3-13.6-23.9C256.8,123.2,248.8,112.5,240.3,102.7z" />
+                            </svg>
+                            <span>Yii</span>
+                        </div>
+                        <div class="icon-item">
+                            <!-- SQL Server SVG custom -->
+                            <svg width="40" height="40" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"
+                                aria-label="SQL Server" role="img" style="margin-bottom:0.4rem;">
+                                <path fill="#CC2927"
+                                    d="M218.9 106.2c-17.8-9.1-44.8-15.5-78.2-17.6-1.2-.1-2.4-.1-3.6-.2 3.8-10.3 7-20.8 9.6-31.4 7.3-2.3 13.5-5.1 18.3-8.4 10.6-7.3 11.2-15.2.9-23.2-4.2-3.2-9.3-5.6-14.7-7.3-10.1-3.3-21.8-3.9-33.6-1.6-12.1 2.3-21.4 6.9-25.4 12.6-2.6 3.8-3 7.5-1.3 11.3 1.4 3.1 4.2 6 8.3 8.6 5.1 3.3 12 6.1 20.1 8.2-1.6 6.2-3.5 12.4-5.6 18.4-9.4-.2-18.6.1-27.6.9C48.3 79.4 21.3 90 21.3 102.5c0 5.6 5.1 10.8 15.2 15.5 11.9 5.5 29.7 9.6 52.5 11.7-4.1 11.3-7.5 22.8-10.2 34.5-7.7 2.8-14.4 6.1-19.6 9.9-10.6 7.7-11.4 15.6-2.3 23.6 6.9 6 17.4 9.5 29.2 10.2 12.2.7 24.9-1.3 35.5-5.6 10.6-4.3 17.8-10.1 20.5-16.4 1.6-3.7 1.2-7.2-1.2-10.7-2-2.9-5.2-5.6-9.6-7.9-4.7-2.5-10.4-4.7-17.3-6.4 2.3-9.3 5-18.5 8.2-27.6 1.7.1 3.4.1 5.1.1 35.2 0 66.3-5.9 81.3-15.5 5.7-3.7 8.6-7.6 8.6-11.5-.1-4.6-3.6-8.9-10.4-12.3z" />
+                            </svg>
+                            <span>SQL Server</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frontend -->
+                <div class="tech-category">
+                    <h3></i> Frontend</h3>
+                    <div class="icon-grid">
+                        <div class="icon-item">
+                            <img src="https://skillicons.dev/icons?i=angular" alt="Angular" title="Angular" />
+                            <span>Angular</span>
+                        </div>
+                        <div class="icon-item">
+                            <img src="https://skillicons.dev/icons?i=js" alt="JavaScript" title="JavaScript" />
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="icon-item">
+                            <img src="https://skillicons.dev/icons?i=ts" alt="TypeScript" title="TypeScript" />
+                            <span>TypeScript</span>
+                        </div>
+                        <div class="icon-item">
+                            <img src="https://skillicons.dev/icons?i=flutter" alt="Flutter" title="Flutter" />
+                            <span>Flutter</span>
+                        </div>
+                        <div class="icon-item">
+                            <!-- Ionic SVG personalizado -->
+                            <svg width="40" height="40" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
+                                aria-label="Ionic" role="img" style="margin-bottom:0.4rem;">
+                                <circle cx="256" cy="256" r="200" fill="#3880ff" />
+                                <circle cx="256" cy="256" r="160" fill="#fff" />
+                                <circle cx="256" cy="256" r="120" fill="#3880ff" />
+                                <circle cx="256" cy="256" r="80" fill="#fff" />
+                                <circle cx="256" cy="256" r="40" fill="#3880ff" />
+                            </svg>
+                            <span>Ionic</span>
+                        </div>
+                        <div class="icon-item">
+                            <img src="https://skillicons.dev/icons?i=jquery" alt="jQuery" title="jQuery" />
+                            <span>jQuery</span>
+                        </div>
+                        <div class="icon-item">
+                            <!-- Bootstrap SVG personalizado -->
+                            <svg width="40" height="40" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"
+                                aria-label="Bootstrap" role="img" style="margin-bottom:0.4rem;">
+                                <rect width="256" height="256" rx="40" ry="40" fill="#7952B3" />
+                                <path fill="#fff"
+                                    d="M161.8 79.4c7.4-2.3 10.9-7.2 10.9-13.7 0-9.3-7.3-14.3-17.3-14.3H99.6v87.9h27.2c11.8 0 20.7-5.8 20.7-16.4 0-7.4-5-12.7-13.1-14.3 8.9-1.3 14-7.3 14-16.1 0-7.1-5-12.1-12.6-13.1zm-34 19.4v-22h18.1c5.6 0 8.9 2.6 8.9 6.8 0 4.3-3.3 6.8-8.9 6.8h-18z" />
+                            </svg>
+                            <span>Bootstrap</span>
+                        </div>
+                        <div class="icon-item">
+                            <!-- Materialize SVG personalizado -->
+                            <svg width="40" height="40" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
+                                aria-label="Materialize" role="img" style="margin-bottom:0.4rem;">
+                                <circle cx="256" cy="256" r="256" fill="#2196F3" />
+                                <path fill="#fff" d="M256 104 112 408h52l58-92 58 92h52L256 104z" />
+                            </svg>
+                            <span>Materialize</span>
+                        </div>
+                        <div class="icon-item">
+                            <!-- Tailwind SVG personalizado -->
+                            <svg width="40" height="40" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"
+                                aria-label="Tailwind CSS" role="img" style="margin-bottom:0.4rem;">
+                                <path fill="#06B6D4"
+                                    d="M128 96c-24 0-40 21-40 42 8-1 16-5 24-13 8-8 15-15 28-15 5 0 11 2 15 6-12-15-25-20-27-20z" />
+                                <path fill="#0EA5E9"
+                                    d="M192 80c-27-1-44 28-54 44-3 7-12 20-27 20-9 0-18-7-18-7s-6 20 6 40c13 25 39 35 65 28 18-5 30-19 35-30 0-3-1-6-1-8-7 12-20 27-44 27-22 0-38-14-46-27 9-9 16-14 20-16 8-3 13-2 20-1 19 4 39 12 53 31-9-18-17-35-18-52 3-17 11-23 11-23z" />
+                            </svg>
+                            <span>Tailwind</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bases de Datos -->
+                <div class="tech-category">
+                    <h3> Bases de Datos</h3>
+                    <div class="icon-grid">
+                        <div class="icon-item">
+                            <img src="https://skillicons.dev/icons?i=mysql" alt="MySQL" title="MySQL" />
+                            <span>MySQL</span>
+                        </div>
+                        <div class="icon-item">
+                            <img src="https://skillicons.dev/icons?i=postgresql" alt="PostgreSQL" title="PostgreSQL" />
+                            <span>PostgreSQL</span>
+                        </div>
+                        <div class="icon-item">
+                            <img src="https://skillicons.dev/icons?i=mongodb" alt="MongoDB" title="MongoDB" />
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="icon-item">
+                            <!-- SQL Server SVG ya incluido arriba en Backend, pero también puedes poner aquí si prefieres -->
+                            <svg width="40" height="40" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"
+                                aria-label="SQL Server" role="img" style="margin-bottom:0.4rem;">
+                                <path fill="#CC2927"
+                                    d="M218.9 106.2c-17.8-9.1-44.8-15.5-78.2-17.6-1.2-.1-2.4-.1-3.6-.2 3.8-10.3 7-20.8 9.6-31.4 7.3-2.3 13.5-5.1 18.3-8.4 10.6-7.3 11.2-15.2.9-23.2-4.2-3.2-9.3-5.6-14.7-7.3-10.1-3.3-21.8-3.9-33.6-1.6-12.1 2.3-21.4 6.9-25.4 12.6-2.6 3.8-3 7.5-1.3 11.3 1.4 3.1 4.2 6 8.3 8.6 5.1 3.3 12 6.1 20.1 8.2-1.6 6.2-3.5 12.4-5.6 18.4-9.4-.2-18.6.1-27.6.9C48.3 79.4 21.3 90 21.3 102.5c0 5.6 5.1 10.8 15.2 15.5 11.9 5.5 29.7 9.6 52.5 11.7-4.1 11.3-7.5 22.8-10.2 34.5-7.7 2.8-14.4 6.1-19.6 9.9-10.6 7.7-11.4 15.6-2.3 23.6 6.9 6 17.4 9.5 29.2 10.2 12.2.7 24.9-1.3 35.5-5.6 10.6-4.3 17.8-10.1 20.5-16.4 1.6-3.7 1.2-7.2-1.2-10.7-2-2.9-5.2-5.6-9.6-7.9-4.7-2.5-10.4-4.7-17.3-6.4 2.3-9.3 5-18.5 8.2-27.6 1.7.1 3.4.1 5.1.1 35.2 0 66.3-5.9 81.3-15.5 5.7-3.7 8.6-7.6 8.6-11.5-.1-4.6-3.6-8.9-10.4-12.3z" />
+                            </svg>
+                            <span>SQL Server</span>
+                        </div>
+                        <div class="icon-item">
+                            <img src="https://skillicons.dev/icons?i=firebase" alt="Firebase" title="Firebase" />
+                            <span>Firebase</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Herramientas -->
+                <div class="tech-category">
+                    <h3>
+                        Herramientas
+                    </h3>
+
+                    <div class="icon-grid">
+                        <div class="icon-item">
+                            <img src="https://skillicons.dev/icons?i=git" alt="Git" title="Git" />
+                            <span>Git</span>
+                        </div>
+                        <div class="icon-item">
+                            <img src="https://skillicons.dev/icons?i=discord" alt="discord" title="discord" />
+                            <span>Discord</span>
+                        </div>
+                        <div class="icon-item">
+                            <img src="https://skillicons.dev/icons?i=linux" alt="Linux" title="Linux" />
+                            <span>Linux</span>
+                        </div>
+                        <div class="icon-item">
+                            <img src="https://skillicons.dev/icons?i=vscode" alt="VS Code" title="VS Code" />
+                            <span>VS Code</span>
+                        </div>
+                        <div class="icon-item">
+                            <img src="https://skillicons.dev/icons?i=figma" alt="Figma" title="Figma" />
+                            <span>Figma</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Experiencia Section -->
+<section id="experience" class="fade-in">
+    <div class="container-exp" data-aos="fade-right">
+      <div class="header-exp" data-aos="fade-right">
+        <svg width="37" height="37" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+          style="vertical-align: middle; margin-right: 8px;">
+          <rect x="3" y="7" width="18" height="12" rx="2" ry="2" fill="#C49E7E" />
+          <rect x="7" y="3" width="10" height="4" rx="1" ry="1" fill="#B38965" />
+          <rect x="9" y="10" width="6" height="6" fill="#D6BFA6" />
+          <path d="M9 10h6v6H9z" fill="#C1A986" fill-opacity="0.7" />
+          <line x1="3" y1="13" x2="21" y2="13" stroke="#A67C52" stroke-width="1" />
+        </svg>
+        <h2 class="header-title">Experiencia</h2>
+      </div>
+  
+      <div class="timeline">
+  
+        <div class="experience-item">
+          <div class="timeline-dot" data-aos="zoom-in-right"></div>
+          <div class="experience-content">
+            <div class="experience-left">
+              <div class="experience-title" data-aos="zoom-in-right">Golden Red - Desarrollador Fullstack</div>
+              <div class="experience-date" data-aos="zoom-in-right">Mayo – Julio 2025</div>
+            </div>
+            <div class="experience-right">
+              <div class="experience-description" data-aos="zoom-in-left">
+                Desarrollé un sistema completo para la gestión empresarial utilizando Laravel y Blade. La plataforma permite administrar clientes, ventas, roles de acceso, actividades y tickets de soporte. Implementé gráficos interactivos con Chart.js y ApexCharts para mostrar métricas clave del negocio en tiempo real, ofreciendo una experiencia dinámica y responsive.
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="experience-item">
+          <div class="timeline-dot" data-aos="zoom-in-right"></div>
+          <div class="experience-content">
+            <div class="experience-left">
+              <div class="experience-title" data-aos="zoom-in-right">DTI Consultores - Desarrollador Backend</div>
+              <div class="experience-date" data-aos="zoom-in-right">Enero – Abril 2025</div>
+            </div>
+            <div class="experience-right">
+              <div class="experience-description" data-aos="zoom-in-left">
+                Contribuí al backend de una app móvil de gestión fitness creada con Angular, Ionic y PHP. El sistema permite a entrenadores y usuarios configurar rutinas personalizadas, monitorear progreso y recibir recomendaciones automáticas. Apliqué el patrón MVC y utilicé MySQL para garantizar una estructura escalable y mantenible.
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="experience-item">
+          <div class="timeline-dot" data-aos="zoom-in-right"></div>
+          <div class="experience-content">
+            <div class="experience-left">
+              <div class="experience-title" data-aos="zoom-in-right">Servicios Especializados en Ingeniería - Desarrollador Fullstack</div>
+              <div class="experience-date" data-aos="zoom-in-right">Enero – Julio 2025</div>
+            </div>
+            <div class="experience-right">
+              <div class="experience-description" data-aos="zoom-in-left">
+                Participé en la creación de un sistema web para la gestión de proyectos internos. Implementé módulos de seguimiento de tareas, carga de documentos y generación de reportes en PDF. Se utilizó PHP, JavaScript y Bootstrap para el desarrollo, con una base de datos MySQL estructurada para facilitar búsquedas y reportes por desempeño.
+              </div>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
+
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <div class="about-text" style="max-width: 700px; margin: 0 auto; text-align: center;">
+                <h2>Proyectos destacados</h2>
+            </div>
+
+            <div class="projects-grid fade-in">
+                <!-- Golden Red -->
+                <div class="project-card">
+                    <img src="images/goldenred.png" alt="Sistema Golden Red" class="project-img">
+                    <div class="project-content">
+                        <h3>Golden Red</h3>
+                        <p>Sistema de gestión empresarial con módulos de clientes, ventas, accesos, actividades y
+                            soporte técnico. Reportes y gráficas en tiempo real con Chart.js y ApexCharts.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Laravel</span>
+                            <span class="tech-tag">Blade</span>
+                            <span class="tech-tag">jQuery</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Bootstrap</span>
+                            <span class="tech-tag">Chart.js</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RoamSuite -->
+                <div class="project-card">
+                    <img src="images/raomsuite.png" alt="RoamSuite" class="project-img">
+                    <div class="project-content">
+                        <h3>RoamSuite</h3>
+                        <p>App de reservas hoteleras con filtros avanzados y pagos/reembolsos mediante Openpay. Diseño
+                            responsivo y enfocado en experiencia de usuario.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Angular</span>
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Bootstrap</span>
+                            <span class="tech-tag">Openpay</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Alex Stores -->
+                <div class="project-card">
+                    <img src="images/alexstores.png" alt="Alex Stores" class="project-img">
+                    <div class="project-content">
+                        <h3>App Web - Alex Stores</h3>
+                        <p>Aplicación web para gestionar un catálogo de productos con filtros dinámicos, ordenamiento,
+                            CRUD y estadísticas en tiempo real. Desarrollada como reto técnico.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Angular</span>
+                            <span class="tech-tag">Bootstrap</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">Chart.js</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Torneos Deportivos -->
+                <div class="project-card">
+                    <img src="images/deportes.png" alt="Gestión de Torneos" class="project-img">
+                    <div class="project-content">
+                        <h3>App Web Progresiva - Torneos Deportivos</h3>
+                        <p>Aplicación progresiva para gestionar torneos, resultados y equipos. Funciona offline y con
+                            notificaciones push.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Laravel</span>
+                            <span class="tech-tag">Blade</span>
+                            <span class="tech-tag">Bootstrap</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">PWA</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gestión Fitness -->
+                <div class="project-card">
+                    <img src="images/olympusgym.png" alt="App Gestión Fitness" class="project-img">
+                    <div class="project-content">
+                        <h3>DTI Consultores - App Fitness</h3>
+                        <p>App híbrida para gestión fitness desarrollada en Angular e Ionic. Backend en PHP con patrón
+                            MVC y base de datos MySQL.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Angular</span>
+                            <span class="tech-tag">Ionic</span>
+                            <span class="tech-tag">PHP (MVC)</span>
+                            <span class="tech-tag">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                 <!-- Gestión de Proyectos -->
+                 <div class="project-card">
+                    <img src="images/GPC.png" alt="App Gestión de Proyectos" class="project-img">
+                    <div class="project-content">
+                        <h3>App Móvil - Gestión de Proyectos</h3>
+                        <p>Aplicación multiplataforma desarrollada en Flutter con backend en Laravel. Integra APIs
+                            externas y base de datos MySQL para colaboración en equipos.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Laravel</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">APIS de terceros</span>
+
+                        </div>
+                    </div>
+                </div>
+
+                
+
+                
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Educación Section -->
+<section id="education" class="fade-in">
+    <div class="container-exp" data-aos="fade-right">
+      <div class="header-exp" data-aos="fade-right">
+        <svg width="37" height="37" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+          style="vertical-align: middle; margin-right: 8px;">
+          <path d="M12 2L1 7l11 5 9-4.09V17h2V7L12 2z" fill="#C49E7E" />
+          <path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2z" fill="#B38965" />
+          <path d="M12 13L3 8v2l9 5 9-5V8l-9 5z" fill="#D6BFA6" />
+        </svg>
+        <h2 class="header-title">Educación</h2>
+      </div>
+  
+      <div class="timeline">
+        <div class="experience-item">
+          <div class="timeline-dot" data-aos="zoom-in-right"></div>
+          <div class="experience-content">
+            <div class="experience-left">
+              <div class="experience-title" data-aos="zoom-in-right">Universidad Tecnológica de Huejotzingo</div>
+              <div class="experience-date" data-aos="zoom-in-right">2021 - 2023</div>
+            </div>
+            <div class="experience-right">
+              <div class="experience-description" data-aos="zoom-in-left">
+                <span style="color:#63b6ee; font-weight: 600;">TSU en Tecnologías de la Información - Área Desarrollo de Software Multiplataforma</span><br>
+                Durante este periodo adquirí habilidades prácticas en programación estructurada y orientada a objetos, manejo de bases de datos relacionales, fundamentos de redes y desarrollo web responsivo.              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="experience-item">
+          <div class="timeline-dot" data-aos="zoom-in-right"></div>
+          <div class="experience-content">
+            <div class="experience-left">
+              <div class="experience-title" data-aos="zoom-in-right">Universidad Tecnológica de Huejotzingo</div>
+              <div class="experience-date" data-aos="zoom-in-right">2023 - 2025</div>
+            </div>
+            <div class="experience-right">
+              <div class="experience-description" data-aos="zoom-in-left">
+                <span style="color:#63b6ee; font-weight: 600;">Ingeniería en Desarrollo y Gestión de Software</span><br>
+                Me especialicé en la aplicación de metodologías ágiles como Scrum y Kanban, así como en el diseño de soluciones escalables mediante principios de arquitectura de software. Desarrollé competencias en liderazgo técnico, gestión de proyectos y documentación, complementadas con habilidades blandas como la colaboración, comunicación efectiva y resolución de problemas complejos.            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p class="footer-text">&copy; 2025 Alex Rv. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  
+    
+</body>
+
+</html>
