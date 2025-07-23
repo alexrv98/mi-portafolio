@@ -14,14 +14,15 @@ function toggleMobileMenu() {
   }
 }
 
-// Cerrar menú al hacer click en un enlace
-document.querySelectorAll('.nav-links a').forEach(link => {
-  link.addEventListener('click', () => {
-    const navLinks = document.getElementById('navLinks');
-    const menuBtn = document.querySelector('.mobile-menu-btn i');
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+      const navLinks = document.getElementById('navLinks');
+      const menuBtn = document.querySelector('.mobile-menu-btn i');
 
-    navLinks.classList.remove('mobile-active');
-    menuBtn.className = 'fas fa-bars';
+      navLinks.classList.remove('mobile-active');
+      menuBtn.className = 'fas fa-bars';
+    });
   });
 });
 
