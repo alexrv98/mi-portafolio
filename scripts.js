@@ -85,11 +85,20 @@ function handleSubmit(event) {
 
 // Descargar CV
 function downloadCV() {
-  const link = document.createElement('a');
-  link.href = '/ruta/del/archivo/Alex-Rmz-CV.pdf'; // Ajusta la ruta
-  link.download = 'CV-ALEXIS RAMIREZ VARILLAS.pdf';
-  link.click();
+  fetch('archivos/CV - ALEXIS RAMIREZ VARILLAS.pdf')
+    .then(response => response.blob())
+    .then(blob => {
+      const url = window.URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'CV-ALEXIS-RAMIREZ-VARILLAS.pdf';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      window.URL.revokeObjectURL(url);
+    });
 }
+
 
 // Inicializar
 document.addEventListener('DOMContentLoaded', function () {
